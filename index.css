@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: black;
+}
+.container img {
+  max-width: 400px;
+  border-radius: 50px;
+
+}
+.light {
+  background-color:rgb(252, 20, 20);
+  height: 220px;
+  width: 300px;
+  position: absolute;
+  top: 42.5%;
+  clip-path: circle(120px);
+  left: -17px;
+  opacity: 0.3;
+  transition: 0.5s;
+}
+.btn {
+  height: 40px;
+ max-width:80px;
+ width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transition: background 0.5s;
+}
+.btn span {
+  background-color: rgb(200, 195, 195);
+  height: 40px;
+  max-width: 40px;
+  width: 100%;
+  position: absolute;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.5s, margin-left 0.5s;
+}
+
+.active {
+  background-color: green;
+}
+.active span {
+  background-color: #fff;
+  margin-left: 40px;
+}
+.glow {
+  background-color: rgb(12, 232, 12);
+  opacity: 0.3;
+  transition: 0.5s;
+  transform: rotate(360deg);
+}
+
+
+@media all and (max-width:600px){
+
+  .btn{
+    top: 85%;
+    left: 30%;
+  }
+  .btn span{
+    top: 0px;
+  }
+
+  .container img{
+    position: relative;
+    left: 50px
+  }
+
+  .light{
+    left: 35px
+    
+  }
+};

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Animation/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="/Animation/pexels-fariphotography-1112598.jpg" alt="" />
+      <div class="light" id="lights"></div>
+      <div class="btn" id="click" onclick="demo()">
+        <span></span> 
+      </div>
+    </div>
+
+    <script>
+      function demo() {
+        const click = document.getElementById("click");
+        const lights = document.getElementById("lights");
+        click.classList.toggle("active");
+        lights.classList.toggle("glow");
+      }
+    </script>
+  </body>
+</html>
